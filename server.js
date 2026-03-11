@@ -37,10 +37,10 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 
 // Раздаем файлы визуального интерфейса (Фронтенд)
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
-app.get('/main.js', (req, res) => res.sendFile(path.join(__dirname, 'main.js')));
-app.get('/features.js', (req, res) => res.sendFile(path.join(__dirname, 'features.js')));
-app.get('/styles.css', (req, res) => res.sendFile(path.join(__dirname, 'styles.css')));
+//app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
+//app.get('/main.js', (req, res) => res.sendFile(path.join(__dirname, 'main.js')));
+//app.get('/features.js', (req, res) => res.sendFile(path.join(__dirname, 'features.js')));
+//app.get('/styles.css', (req, res) => res.sendFile(path.join(__dirname, 'styles.css')));
 
 // Получить одного пользователя
 app.get('/api/users/:id', async (req, res) => {
