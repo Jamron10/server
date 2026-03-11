@@ -1,4 +1,4 @@
-bot.js  const { Telegraf, Markup } = require('telegraf');
+const { Telegraf, Markup } = require('telegraf');
 const mongoose = require('mongoose');
 const express = require('express');
 const cors = require('cors');
